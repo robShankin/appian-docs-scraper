@@ -1,0 +1,62 @@
+{
+    // --- Appian Built-in Functions ---
+    "Appian ForEach": {
+        "prefix": ["a!forEach", "forEach"],
+        "body": [
+            "a!forEach(",
+            "  items: ${1:Array of Items},",
+            "  expression: ${2:Expression using fv!item}",
+            ")"
+        ],
+        "description": "a!forEach: Iterates over a list. (fv!item, fv!index)"
+    },
+
+    "Appian Local Variables": {
+        "prefix": ["a!localVariables", "localVariables"],
+        "body": [
+            "a!localVariables(",
+            "  local!${1:myVariable}: ${2:initialValue},",
+            "  ${3:/* Expression that uses local!myVariable */} /* The Return Value */",
+            ")"
+        ],
+        "description": "a!localVariables: Define and scope local variables for the expression."
+    },
+
+    "Appian Query Record Type": {
+        "prefix": ["a!queryRecordType", "queryRecordType", "queryRec"],
+        "body": [
+            "a!queryRecordType(",
+            "  recordType: ${1:recordType!},",
+            "  fields: ${2:fields},",
+            "  pagingInfo: ${3:a!pagingInfo(startIndex: 1, batchSize: 50)},",
+            "  filters: ${4:filters},",
+            "  fetchTotalCount: ${5:true}",
+            ")"
+        ],
+        "description": "a!queryRecordType: Queries records from a Record Type."
+    },
+
+    "Appian Paging Info": {
+        "prefix": ["a!pagingInfo", "pagingInfo"],
+        "body": [
+            "a!pagingInfo(",
+            "  startIndex: ${1:1},",
+            "  batchSize: ${2:50},",
+            "  sort: ${3:a!sortInfo(field: \"field\", ascending: true)}",
+            ")"
+        ],
+        "description": "a!pagingInfo: Defines the required paging and sorting configuration for record queries."
+    },
+
+    "Rule Input (ri!)": {
+        "prefix": ["ri!"],
+        "body": "ri!${1:inputName}",
+        "description": "Reference a Rule Input."
+    },
+
+    "Feature Variable (fv!)": {
+        "prefix": ["fv!"],
+        "body": "fv!${1:item}",
+        "description": "References variables provided by a context (e.g., fv!item in forEach)."
+    }
+}
