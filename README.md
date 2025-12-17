@@ -2,6 +2,8 @@
 
 A Python-based web scraper that extracts all Appian functions from the official documentation and generates comprehensive VS Code snippets.
 
+**🚀 New to this project? Check out the [QUICK_START.md](QUICK_START.md) for step-by-step setup instructions!**
+
 ## Project Overview
 
 This project successfully scraped **713 Appian functions** from the official Appian 25.4 documentation and generated high-quality VS Code snippets for development efficiency.
@@ -46,20 +48,39 @@ This project successfully scraped **713 Appian functions** from the official App
 
 ## Usage
 
-### Setup
+**👉 For detailed setup instructions, see [QUICK_START.md](QUICK_START.md)**
+
+### Quick Commands
+
 ```bash
+# Setup dependencies
 python3 setup.py
-```
 
-### Run Full Scraper
-```bash
+# Run scraper (default: Appian 25.4)
 python3 scrape_appian_docs.py
-```
 
-### Test Quality
-```bash
+# Run scraper for different version
+python3 scrape_appian_docs.py --url https://docs.appian.com/suite/help/26.0/Appian_Functions.html
+
+# Custom output file
+python3 scrape_appian_docs.py --output appian-26.0-functions.json
+
+# Get help
+python3 scrape_appian_docs.py --help
+
+# Test quality
 python3 test_function_types.py
 ```
+
+### Changing Target Appian Version
+
+When Appian releases a new version, simply update the `--url` parameter:
+
+```bash
+python3 scrape_appian_docs.py --url https://docs.appian.com/suite/help/26.0/Appian_Functions.html --output appian-26.0.json
+```
+
+No code changes needed!
 
 ## Snippet Format
 
@@ -98,6 +119,7 @@ Each function generates a VS Code snippet with:
 ```
 .
 ├── README.md                          # This file
+├── QUICK_START.md                     # Step-by-step setup guide
 ├── LICENSE                            # MIT License
 ├── .gitignore                         # Git ignore rules
 │

@@ -8,6 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+import argparse
 from typing import Dict, List, Optional
 from urllib.parse import urljoin, urlparse
 
@@ -296,17 +297,51 @@ class AppianDocScraper:
 
 
 def main():
-    scraper = AppianDocScraper()
+    parser = argparse.ArgumentParser(
+        description='Scrape Appian documentation and generate VS Code snippets',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Use default URL (Appian 25.4)
+  python3 scrape_appian_docs.py
+
+  # Specify a different Appian version
+  python3 scrape_appian_docs.py --url https://docs.appian.com/suite/help/25.5/Appian_Functions.html
+
+  # Custom output file
+  python3 scrape_appian_docs.py --output appian-26.0-functions.json
+        """
+    )
+
+    parser.add_argument(
+        '--url',
+        type=str,
+        default="https://docs.appian.com/suite/help/25.4/Appian_Functions.html",
+        help='URL to the Appian Functions documentation page (default: 25.4)'
+    )
+
+    parser.add_argument(
+        '--output',
+        type=str,
+        default="appian-functions-complete.json",
+        help='Output JSON file name (default: appian-functions-complete.json)'
+    )
+
+    args = parser.parse_args()
+
+    print(f"Scraping from: {args.url}")
+    print(f"Output file: {args.output}\n")
+
+    scraper = AppianDocScraper(base_url=args.url)
     snippets = scraper.run()
 
     if snippets:
         # Save to JSON file
-        output_file = "appian-functions-complete.json"
-        with open(output_file, 'w', encoding='utf-8') as f:
+        with open(args.output, 'w', encoding='utf-8') as f:
             json.dump(snippets, f, indent=4, ensure_ascii=False)
 
         print(f"\nGenerated {len(snippets)} snippets")
-        print(f"Saved to: {output_file}")
+        print(f"Saved to: {args.output}")
     else:
         print("No snippets generated")
 
