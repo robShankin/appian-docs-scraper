@@ -20,20 +20,29 @@ This project successfully scraped **713 Appian functions** from the official App
 
 ### Main Output
 - `appian-functions-complete.json` - Complete snippets file with all 713 Appian functions
+- `appian-functions-docs.json` - Enriched function documentation for AI-driven code generation
 
 ### Original Sample
 - `appian-el_v0.0.1.json` - Initial sample snippets file
 
 ### Development Tools
 - `scrape_appian_docs.py` - Main scraper script
+- `scrape_appian_docs_enhanced.py` - Enhanced version with additional features
 - `requirements.txt` - Python dependencies
 - `setup.py` - Environment setup script
 
 ### Testing & Debug Scripts
+- `test_fix.py` - Regression test for numeric prefix bug fix
 - `test_function_types.py` - Analyze function type distribution
 - `test_single_function.py` - Test individual function processing
+- `test_individual_pages.py` - Test scraping of individual function pages
+- `test_page_structure.py` - Validate HTML page structure
+- `test_correct_urls.py` - Verify function URL extraction
+- `test_edge_cases.py` - Test edge cases and error handling
 - `final_test.py` - Quality verification
-- `debug_*.py` - Various debugging utilities
+- `debug_append_function.py` - Debug specific function extraction
+- `debug_extraction.py` - Debug parameter extraction logic
+- `deep_page_analysis.py` - Analyze page structure in detail
 
 ## Usage
 
@@ -89,13 +98,31 @@ Each function generates a VS Code snippet with:
 ```
 .
 ├── README.md                          # This file
+├── LICENSE                            # MIT License
+├── .gitignore                         # Git ignore rules
+│
 ├── appian-functions-complete.json     # Main output (713 functions)
+├── appian-functions-docs.json         # Enriched documentation
 ├── appian-el_v0.0.1.json             # Original sample
+│
 ├── scrape_appian_docs.py             # Main scraper
+├── scrape_appian_docs_enhanced.py    # Enhanced scraper
 ├── requirements.txt                   # Dependencies
 ├── setup.py                          # Setup script
-├── test_*.py                         # Testing utilities
-├── debug_*.py                        # Debug scripts
+│
+├── test_fix.py                       # Regression test for bug fix
+├── test_function_types.py            # Function type analysis
+├── test_single_function.py           # Single function test
+├── test_individual_pages.py          # Page scraping test
+├── test_page_structure.py            # HTML structure validation
+├── test_correct_urls.py              # URL extraction test
+├── test_edge_cases.py                # Edge case testing
+├── final_test.py                     # Quality verification
+│
+├── debug_append_function.py          # Debug specific function
+├── debug_extraction.py               # Debug parameter extraction
+├── deep_page_analysis.py             # Page analysis
+│
 └── .kiro/                            # AI assistant steering
     └── steering/
         ├── product.md                # Project objectives
@@ -105,11 +132,23 @@ Each function generates a VS Code snippet with:
 
 ## Success Metrics
 
-✅ **Complete coverage**: All 713 documented functions processed  
-✅ **High quality**: Proper parameter extraction with types  
-✅ **Format compliance**: Matches original snippet format exactly  
-✅ **Error resilience**: Handles malformed pages gracefully  
-✅ **Type distinction**: Correctly identifies a! vs regular functions  
+✅ **Complete coverage**: All 713 documented functions processed
+✅ **High quality**: Proper parameter extraction with types
+✅ **Format compliance**: VS Code snippet format with proper syntax
+✅ **Error resilience**: Handles malformed pages gracefully
+✅ **Type distinction**: Correctly identifies a! vs regular functions
+
+## Recent Fixes
+
+### December 16, 2025 - Numeric Prefix Bug Fix
+Fixed a bug where certain functions had numeric prefixes in snippet bodies:
+- **Issue**: Functions like `now()`, `today()`, `timezone()`, `timezoneid()`, and `infinity()` were generated with "1" prefix (e.g., `1now()`)
+- **Root Cause**: Signature extraction captured arithmetic examples from documentation (e.g., `1*now()`)
+- **Solution**: Strip leading digits from extracted function names in `_create_body_from_signature()` method
+- **Status**: ✅ Fixed - All tests passing
+- **Note**: Regenerate JSON files by running `python3 scrape_appian_docs.py` to get corrected output
+
+See commit [b8d60b9](https://github.com/robShankin/appian-docs-scraper/commit/b8d60b9) for details.
 
 ## Integration with VS Code Extension
 
@@ -137,7 +176,9 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**Generated**: December 15, 2025
+**Initial Scrape**: December 15, 2025
+**Last Updated**: December 16, 2025
 **Appian Version**: 25.4
 **Total Functions**: 713
 **GitHub**: https://github.com/robShankin/appian-docs-scraper
+**License**: MIT
