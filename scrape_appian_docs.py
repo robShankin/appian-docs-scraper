@@ -224,6 +224,10 @@ class AppianDocScraper:
         # Just create a simple function call
         if '(' in signature and ')' in signature:
             func_name = signature.split('(')[0].strip()
+
+            # Remove leading digits (from examples like "1now()", "1today()")
+            func_name = func_name.lstrip('0123456789')
+
             return [
                 f"{func_name}(",
                 "  ${1:/* parameters */}",
