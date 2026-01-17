@@ -23,6 +23,7 @@ This project successfully scraped **713 Appian functions** from the official App
 ### Main Output
 - `appian-functions-complete.json` - Complete snippets file with all 713 Appian functions
 - `appian-functions-docs.json` - Enriched function documentation for AI-driven code generation
+- `appian-function-syntax.json` - Per-function keyword vs positional syntax map (tri-state)
 
 ### Original Sample
 - `appian-el_v0.0.1.json` - Initial sample snippets file
