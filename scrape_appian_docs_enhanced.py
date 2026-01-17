@@ -59,9 +59,10 @@ class EnhancedAppianDocScraper:
 
         return functions
 
-    def scrape_function_details(self, function_info: Dict) -> Dict:
+    def scrape_function_details(self, function_info: Dict, soup: Optional[BeautifulSoup] = None) -> Dict:
         """Scrape detailed information for a specific function."""
-        soup = self.fetch_page(function_info['url'])
+        if soup is None:
+            soup = self.fetch_page(function_info['url'])
         if not soup:
             return {
                 'name': function_info['name'],
@@ -73,7 +74,10 @@ class EnhancedAppianDocScraper:
             }
 
         main_content = soup.find('main') or soup.find('div', class_='content') or soup
+        return self._build_function_details(function_info, main_content)
 
+    def _build_function_details(self, function_info: Dict, main_content: BeautifulSoup) -> Dict:
+        """Build the enriched function record from a parsed page."""
         # Extract all the rich information we need
         description = self._extract_full_description(main_content)
         return_info = self._extract_return_type(main_content)
@@ -183,7 +187,12 @@ class EnhancedAppianDocScraper:
         return result
 
     def _extract_parameter_details(self, soup: BeautifulSoup) -> Dict:
-        """Extract detailed parameter information."""
+        """Extract detailed parameter information.
+
+        Handles two Appian documentation table formats:
+        - 4-column (UI components): Name | Keyword | Types | Description
+        - 3-column (system functions): Keyword | Type | Description
+        """
         parameters = {}
 
         tables = soup.find_all('table')
@@ -194,10 +203,16 @@ class EnhancedAppianDocScraper:
 
             header_row = rows[0]
             header_cells = header_row.find_all(['th', 'td'])
-            header_text = ' '.join([cell.get_text(strip=True).lower() for cell in header_cells])
+            headers = [cell.get_text(strip=True).lower() for cell in header_cells]
+            header_text = ' '.join(headers)
 
             # Check if this is a parameter table
             if 'keyword' in header_text or ('type' in header_text and 'description' in header_text):
+                # Determine table format by checking headers
+                # 4-column format: ['name', 'keyword', 'types', 'description']
+                # 3-column format: ['keyword', 'type', 'description']
+                is_4_column = len(headers) >= 4 and 'name' in headers[0]
+
                 for row in rows[1:]:
                     cells = row.find_all(['td', 'th'])
                     if len(cells) >= 2:
@@ -208,15 +223,34 @@ class EnhancedAppianDocScraper:
                             param_name not in ['Keyword', 'Parameter', 'Name', 'Disclaimer', 'Privacy'] and
                             len(param_name) < 50):
 
-                            param_info = {
-                                'type': cells[1].get_text(strip=True) if len(cells) > 1 else '',
-                                'description': cells[2].get_text(strip=True) if len(cells) > 2 else ''
-                            }
+                            if is_4_column and len(cells) >= 4:
+                                # 4-column format: Name | Keyword | Types | Description
+                                param_info = {
+                                    'type': cells[1].get_text(strip=True),  # Keyword column
+                                    'dataType': cells[2].get_text(strip=True),  # Types column
+                                    'description': cells[3].get_text(strip=True),  # Description column
+                                    'required': False
+                                }
+                            elif len(cells) >= 3:
+                                # 3-column format: Keyword | Type | Description
+                                param_info = {
+                                    'type': param_name,  # First column is keyword in this format
+                                    'dataType': cells[1].get_text(strip=True),  # Type column
+                                    'description': cells[2].get_text(strip=True),  # Description column
+                                    'required': False
+                                }
+                            else:
+                                # Fallback for 2-column tables
+                                param_info = {
+                                    'type': cells[1].get_text(strip=True) if len(cells) > 1 else '',
+                                    'description': '',
+                                    'required': False
+                                }
 
-                            # Check if required (some docs indicate this)
-                            if len(cells) > 3:
-                                required_text = cells[3].get_text(strip=True).lower()
-                                param_info['required'] = 'required' in required_text or 'yes' in required_text
+                            # Check for "required" mentions in description
+                            desc_lower = param_info.get('description', '').lower()
+                            if 'required' in desc_lower and 'not required' not in desc_lower:
+                                param_info['required'] = True
 
                             parameters[param_name] = param_info
                 break
@@ -250,6 +284,78 @@ class EnhancedAppianDocScraper:
                                     return examples
 
         return examples
+
+    def _extract_keyword_syntax(self, soup: BeautifulSoup, examples: List[str]) -> Dict:
+        """Infer whether a function uses keyword or positional syntax.
+
+        This intentionally uses a tri-state result to avoid forcing a conclusion
+        when documentation signals are incomplete or ambiguous.
+        """
+        keywords = self._extract_keywords_section(soup)
+        if keywords:
+            return {
+                'keywordSyntax': True,
+                'evidence': 'keywords_section'
+            }
+
+        if examples:
+            uses_keywords = any(self._example_uses_keywords(example) for example in examples)
+            return {
+                'keywordSyntax': uses_keywords,
+                'evidence': 'examples'
+            }
+
+        return {
+            'keywordSyntax': 'unknown',
+            'evidence': 'none'
+        }
+
+    def _extract_keywords_section(self, soup: BeautifulSoup) -> List[str]:
+        """Extract a function page's explicit Keywords list when available."""
+        keywords = []
+        keywords_headings = soup.find_all(string=re.compile(r'keywords', re.IGNORECASE))
+
+        for heading in keywords_headings:
+            parent = heading.parent
+            if not parent:
+                continue
+            # Avoid parameter table headers (e.g., "Keyword" column in tables).
+            if parent.find_parent('table') is not None:
+                continue
+
+            # Look for list-based keywords immediately after the heading
+            list_container = parent.find_next(['ul', 'ol'])
+            if list_container:
+                for item in list_container.find_all('li'):
+                    text = item.get_text(strip=True)
+                    if text:
+                        keywords.append(text)
+                if keywords:
+                    return keywords
+
+            # Fallback: parse comma-separated keywords in nearby text
+            text_container = parent.find_next(['p', 'div', 'span'])
+            if text_container:
+                raw_text = text_container.get_text(strip=True)
+                if raw_text:
+                    raw_text = raw_text.replace('Keywords:', '').replace('Keyword:', '')
+                    for token in raw_text.split(','):
+                        token = token.strip()
+                        if token:
+                            keywords.append(token)
+                if keywords:
+                    return keywords
+
+        return keywords
+
+    def _example_uses_keywords(self, example: str) -> bool:
+        """Heuristic: detect keyword-style arguments in example code."""
+        if not example or '(' not in example or ')' not in example:
+            return False
+        # Ignore URL fragments and other non-argument uses of ':'.
+        if 'http://' in example or 'https://' in example:
+            example = example.replace('http://', '').replace('https://', '')
+        return re.search(r'\b[a-zA-Z]\w*\s*:', example) is not None
 
     def _extract_use_case(self, soup: BeautifulSoup, description: str) -> str:
         """Extract or infer the primary use case."""
@@ -373,6 +479,14 @@ class EnhancedAppianDocScraper:
             },
             'functions': {}
         }
+        syntax_map = {
+            'metadata': {
+                'source': 'appian-docs-scraper',
+                'appianVersion': self.base_url,
+                'scrapedDate': docs['metadata']['scrapedDate']
+            },
+            'functions': {}
+        }
 
         count = 0
         for name, info in functions.items():
@@ -380,11 +494,33 @@ class EnhancedAppianDocScraper:
                 break
 
             print(f"Processing {name} ({count + 1}/{len(functions)})...")
-            detailed_info = self.scrape_function_details(info)
+            soup = self.fetch_page(info['url'])
+            if not soup:
+                detailed_info = {
+                    'name': info['name'],
+                    'description': '',
+                    'parameters': {},
+                    'returnType': '',
+                    'examples': [],
+                    'category': 'Other'
+                }
+                syntax_info = {
+                    'keywordSyntax': 'unknown',
+                    'evidence': 'fetch_error'
+                }
+            else:
+                main_content = soup.find('main') or soup.find('div', class_='content') or soup
+                detailed_info = self._build_function_details(info, main_content)
+                syntax_info = self._extract_keyword_syntax(main_content, detailed_info['examples'])
+
             docs['functions'][detailed_info['name']] = detailed_info
+            syntax_map['functions'][detailed_info['name']] = syntax_info
             count += 1
 
-        return docs
+        return {
+            'docs': docs,
+            'syntax': syntax_map
+        }
 
 
 def main():
@@ -402,7 +538,9 @@ def main():
             sys.exit(1)
 
     scraper = EnhancedAppianDocScraper()
-    docs = scraper.run(limit=limit)
+    result = scraper.run(limit=limit)
+    docs = result.get('docs', {})
+    syntax_map = result.get('syntax', {})
 
     if docs and docs.get('functions'):
         # Save to JSON file
@@ -412,6 +550,12 @@ def main():
 
         print(f"\n✓ Generated documentation for {len(docs['functions'])} functions")
         print(f"✓ Saved to: {output_file}")
+
+        # Save keyword/positional syntax map (separate file to avoid breaking existing outputs)
+        syntax_file = "appian-function-syntax.json"
+        with open(syntax_file, 'w', encoding='utf-8') as f:
+            json.dump(syntax_map, f, indent=2, ensure_ascii=False)
+        print(f"✓ Saved syntax map to: {syntax_file}")
 
         # Print sample
         sample_func = list(docs['functions'].values())[0]

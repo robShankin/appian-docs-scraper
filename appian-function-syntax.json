@@ -1,0 +1,2861 @@
+{
+  "metadata": {
+    "source": "appian-docs-scraper",
+    "appianVersion": "https://docs.appian.com/suite/help/25.4/Appian_Functions.html",
+    "scrapedDate": "2025-12-15"
+  },
+  "functions": {
+    "a!dashboardLayoutColumns": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!formLayoutColumns": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sectionLayoutColumns": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!flatten": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!update": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "append": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "index": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "insert": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "joinarray": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "ldrop": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "length": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "rdrop": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "remove": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "reverse": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "updatearray": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "where": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "wherecontains": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "bin2dec": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "bin2hex": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "bin2oct": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "dec2bin": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "dec2hex": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "dec2oct": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "hex2bin": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "hex2dec": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "hex2oct": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "oct2bin": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "oct2dec": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "oct2hex": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cmiCopyDocumentFromAppian": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cmiCopyDocumentToAppian": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cmiCopyDocumentToAppianFolder": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cmiCreateFolder": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cmiDelete": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cmiGetFolderChildren": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cmiGetObjectIdByPath": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cmiGetProperties": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cmiGetRepoInfo": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dynAssociate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dynCreate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dynDelete": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dynDisassociate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dynRetrieve": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dynRetrieveMultiple": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dynUpdate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!httpAuthenticationBasic": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!httpFormPart": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!httpHeader": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!httpQuery": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!httpQueryParameter": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!httpWrite": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!scsField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!verifyRecaptcha": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!sapBapiParameters": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sapInvoke": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sapInvokeWriter": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sblCreate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sblDelete": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sblInvoke": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sblInvokeWriter": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sblQuery": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sblUpdateFieldValue": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sfcDelete": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sfcDescribeGlobal": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sfcDescribeSObjects": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sfcInsert": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sfcQuery": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sfcSearch": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sfcUpdate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!shpCopyDocumentFromAppian": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!shpCopyDocumentToAppian": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!shpInvoke": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!shpInvokeWriter": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!wsConfig": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!wsHttpCredentials": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!wsHttpHeaderField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!wsUsernameToken": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!wsUsernameTokenScs": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "displayvalue": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "externalize": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "internalize": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "toboolean": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "tocommunity": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "todate": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "todatetime": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "todecimal": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "todiscussionthread": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "todocument": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "toemailaddress": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "toemailrecipient": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "tofolder": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "toforum": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "tointeger": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "tointervalds": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "toknowledgecenter": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "tomessage": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "topage": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "toportlet": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "tostring": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "totime": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "touniformstring": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!customFieldConcat": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!customFieldCondition": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!customFieldMatch": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!customFieldDateDiff": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!customFieldDefaultValue": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!customFieldDivide": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!customFieldLogicalExpression": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!customFieldMultiply": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!customFieldSubtract": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!customFieldSum": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!addDateTime": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "caladddays": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "caladdhours": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "calisworkday": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "calisworktime": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "calworkdays": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "calworkhours": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "date": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "datetime": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "datevalue": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "day": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "dayofyear": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "days360": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "daysinmonth": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "edate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "eomonth": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "gmt": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "hour": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "intervalds": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "isleapyear": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "lastndays": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "local": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "milli": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "minute": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "month": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "networkdays": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "now": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "second": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!subtractDateTime": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "time": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "timevalue": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "timezone": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "timezoneid": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "today": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "weekday": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "weeknum": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "workday": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "year": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "yearfrac": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!docExtractionResult": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!docExtractionStatus": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!asyncVariable": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!localVariables": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!refreshVariable": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!controlPanelRecords": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "bind": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "load": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!save": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "with": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!automationId": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!automationType": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!defaultValue": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!keys": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!listType": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "byReference": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "cast": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "error": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "infinity": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "isinfinite": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "isnegativeinfinity": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!isNotNullOrEmpty": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "isnull": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!isNullOrEmpty": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "ispositiveinfinity": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "nan": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "null": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "runtimetypeof": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!submittedOfflineTaskIds": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "typename": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "typeof": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "and": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "choose": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!match": {
+      "keywordSyntax": true,
+      "evidence": "keywords_section"
+    },
+    "false": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "if": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "not": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "or": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "true": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!forEach": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "all": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "any": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "apply": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "filter": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "merge": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "none": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "reduce": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "reject": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "abs": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "ceiling": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "combin": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!distanceBetween": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "e": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "enumerate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "even": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "exp": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "fact": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "factdouble": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "floor": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "int": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "ln": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "log": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "mod": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "mround": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "multinomial": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "odd": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "pi": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "power": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "product": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "quotient": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "rand": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "round": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "rounddown": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "roundup": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "sign": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "sqrt": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "sqrtpi": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "sum": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "sumsq": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "trunc": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!doesGroupExist": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!groupMembers": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!groupsByName": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!groupsByType": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!groupsForUser": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!isUserMemberOfGroup": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "getdistinctusers": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "getgroupattribute": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "group": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "isusermemberofgroup_21r2": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "isusernametaken": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "loggedInUser": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "supervisor": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "togroup": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "topeople": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "touser": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "user": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!aggregationFields": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!queryRecordType": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!grouping": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!measure": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!isNativeMobile": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!isPageWidth": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!urlForTask": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "averagetaskcompletiontimeforprocessmodel": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "averagetasklagtimeforprocessmodel": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "averagetaskworktimeforprocessmodel": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "community": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "datetext": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "document": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "folder": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "getprocessemail": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "getprocessmodelemail": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "isNativePhone": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "isNativeTablet": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "isInDaylightSavingTime": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "knowledgecenter": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktocommunity": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktocommunityinternal": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktodocument": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktodocumentinternal": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktofolder": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktofolderinternal": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktogroup": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktogroupinternal": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktoknowledgecenter": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktoknowledgecenterinternal": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktoprocessdashboard": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktoprocessdashboardinternal": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktoprocessmodeldashboard": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktoprocessmodeldashboardinternal": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktouser": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "linktouserinternal": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "numontimeprocessesforprocessmodel": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "numontimetasksforprocessmodel": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "numoverdueprocessesforprocessmodel": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "numoverduetasksforprocessmodel": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "numprocessesforprocessmodelforstatus": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "numtasksforprocessmodelforstatus": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "offsetFromGMT": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "page": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!portalUrlWithLocale": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "property": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "queryrecord": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "repeat": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "todatasubset": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "topaginginfo": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "torecord": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "toxml": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!urlForPortal": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!urlForRecord": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "urlForRecord_23r4": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!urlForSite": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "urlwithparameters": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "userdate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "userdatetime": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "userdatevalue": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "userday": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "userdayofyear": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "userdaysinmonth": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "useredate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "usereomonth": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "userisleapyear": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "userlocale": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "usermonth": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "usertimezone": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "userweekday": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "userweeknum": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "useryear": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "webservicequery": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "webservicewrite": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "xpathdocument": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "xpathsnippet": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "contains": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "difference": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "intersection": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "symmetricdifference": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "union": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "avedev": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "average": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "count": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "frequency": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "gcd": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "geomean": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "harmean": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "lcm": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "lookup": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "max": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "median": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "min": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "mode": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "rank": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "stdev": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "stdevp": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "var": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "varp": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!applyValidations": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!applyComponents": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!controlPanelRecordHierarchyMetadata": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dataSubset": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!deployment": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!endsWith": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!entityData": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!writeToMultipleDataStoreEntities": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!entityDataIdentifiers": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!deleteFromDataStoreEntities": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!executeStoredProcedureForQuery": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!facet": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!facetOption": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!fromJson": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!fromJson_19r2": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!getDataSourceForPlugin": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!httpResponse": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!httpResponse_17r4": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!iconIndicator": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!iconNewsEvent": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!integrationError": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!isBetween": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!isInText": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!jsonPath": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!latestHealthCheck": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!listViewItem": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!pagingInfo": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!query": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!queryAggregation": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!queryAggregationColumn": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!queryColumn": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!queryEntity": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!queryEntity_18r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!queryEntity_22r2": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!queryFilter": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!pickerFieldRecords": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!recordData": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!relatedRecordData": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!recordFilterListOption": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!queryLogicalExpression": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!queryProcessAnalytics": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!queryRecordByIdentifier": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!querySelection": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!recordFilterChoices": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!recordFilterDateRange": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!recordFilterDateRange_20r2": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!recordFilterList": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!sentimentScore": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!sortInfo": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!startsWith": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!storedProcedureInput": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!submitUploadedFiles": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!toJson": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!toJson_17r1": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!toRecordIdentifier": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!userRecordFacets": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!userRecordFilterList": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!userRecordFilterList_22r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!userRecordIdentifier": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!userRecordListViewItem": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!userRecordListViewItem_22r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!callLanguageModel": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!documentFolderForRecordType": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!doesUserHaveAccess": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!genAiModels": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!map": {
+      "keywordSyntax": true,
+      "evidence": "keywords_section"
+    },
+    "a!pageResponse": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!queryRecordByIdentifier_25r2": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!queryRecordType_20r4": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!queryRecordType_24r4": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!queryRecordType_25r2": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!queryRecordType_25r3": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!selectionFields": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!testRunResultForId": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!testRunStatusForId": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "cents": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "char": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "charat": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "clean": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "cleanwith": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "code": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "concat": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!currency": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "currency_22r4": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "dollar": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "euro": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "exact": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "extract": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "extractanswers": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "find": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "fixed": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!formatPhoneNumber": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "fromHtml": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "initials": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "insertkey": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "insertkeyval": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "insertquestions": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!isPhoneNumber": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "keyval": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "left": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "leftb": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "len": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "lenb": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "like": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "lower": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "mid": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "midb": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "padleft": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "padright": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "pound": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "proper": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "replace": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "replaceb": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "rept": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "resource": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "right": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "search": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "searchb": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "soundex": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "split": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "strip": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "stripHtml": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "stripwith": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "substitute": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!swissFranc": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "text": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "toHtml": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "trim": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "upper": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "value": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "yen": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "acos": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "acosh": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "asin": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "asinh": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "atan": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "atanh": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "cos": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "cosh": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "degrees": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "radians": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "sin": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "sinh": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "tan": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "tanh": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!areaChartField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!areaChartConfig": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!barChartField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!barChartField_21r4": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!barChartConfig": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!barcodeField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!billboardLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!billboardLayout_19r1": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!boxLayout": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!richTextBulletedList": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!buttonArrayLayout": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!buttonWidget": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!buttonWidget_23r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!buttonLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!colorSchemeCustom": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!chartReferenceLine": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!chartSeries": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!chatField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!checkboxFieldByIndex": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!checkboxField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!checkboxField_23r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!columnChartField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!columnChartConfig": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!columnLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!hierarchyBrowserFieldColumns": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!hierarchyBrowserFieldColumnsNode": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!columnsLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!pickerFieldCustom": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dashboardLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dashboardLayout_17r1": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dataFabricChatField": {
+      "keywordSyntax": true,
+      "evidence": "keywords_section"
+    },
+    "a!dateField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dateTimeField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!documentBrowserFieldColumns": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!documentBrowserFieldColumns_17r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!documentImage": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!documentDownloadLink": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!pickerFieldDocuments": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!documentViewerField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!documentAndFolderBrowserFieldColumns": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!pickerFieldDocumentsAndFolders": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!documentsChatField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!dropdownFieldByIndex": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dropdownFieldByIndex_20r2": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dropdownField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!dropdownField_20r2": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!dynamicLink": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!gridLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!encryptedTextField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!eventData": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!eventHistoryListField": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!fileUploadField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!fileUploadField_17r1": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!floatingPointField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!folderBrowserFieldColumns": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!pickerFieldFolders": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!formLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!formLayout_17r1": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!formLayout_25r1": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!gaugeField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!gaugeFraction": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!gaugeIcon": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!gaugePercentage": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!gridColumn": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!gridLayoutColumnConfig": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!gridLayoutHeaderCell": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!gridImageColumn": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!gridImageColumn_17r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!gridRowLayout": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!gridSelection": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!gridTextColumn": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!groupBrowserFieldColumns": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!pickerFieldGroups": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!headerContentLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!headerTemplateFull": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!headerTemplateImage": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!headerTemplateSimple": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!richTextHeader": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!horizontalLine": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!imageField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!imageField_17r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!richTextImage": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!integerField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!kpiField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!lineChartField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!lineChartField_19r1": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!lineChartConfig": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!linkField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!richTextListItem": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!messageBanner": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!milestoneField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!multipleDropdownFieldByIndex": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!multipleDropdownFieldByIndex_20r2": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!multipleDropdownField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!multipledropdownField_20r2": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!newsEntryLink": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!richTextNumberedList": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!orgChartField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!gridField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!gridField_19r1": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!gridField_23r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!gridField_24r3": {
+      "keywordSyntax": false,
+      "evidence": "examples"
+    },
+    "a!gridField_25r2": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!gridField_25r3": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!pane": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!paneLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!paragraphField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!pieChartField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!pieChartConfig": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!processTaskLink": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!progressBarField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!radioButtonFieldByIndex": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!radioButtonField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!radioButtonField_23r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!recordActionField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!recordActionField_23r3": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!recordActionItem": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!recordLink": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!pickerFieldRecords_20r2": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!pickerFieldRecords_22r1": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!recordsChatField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!reportLink": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!richTextDisplayField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!scatterChartField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sectionLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sectionLayout_17r1": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!sideBySideItem": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!sideBySideLayout": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!sidebarTemplate": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!signatureField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!stampField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!startProcessLink": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!richTextIcon": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!richTextItem": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!richTextItem_18r1": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!styledTextEditorField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!buttonWidgetSubmit": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!submitLink": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!tagField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!tagItem": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!tagItem_24r2": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!textField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!timeDisplayField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!hierarchyBrowserFieldTree": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!hierarchyBrowserFieldTreeNode": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!userBrowserFieldColumns": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!userImage": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!pickerFieldUsers": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!userRecordLink": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!userAndGroupBrowserFieldColumns": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!pickerFieldUsersAndGroups": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!validationMessage": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!videoField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!webContentField": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!webImage": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!safeLink": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!webVideo": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!wizardLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!wizardStep": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!authorizationLink": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!barOverlay": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!cardTemplateBarTextStacked": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cardTemplateBarTextJustified": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cardChoiceField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cardTemplateTile": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cardGroupLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cardLayout": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!columnOverlay": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!fullOverlay": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!headingField": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!addAdminsToGroup": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!addMembersToGroup": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!createUser": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cancelProcess": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!cancelProcess_17r3": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!updateUserType": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!completeTask": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!createFolder": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!createGroup": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!createKnowledgeCenter": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!createKnowledgeCenter_17r4": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!deactivateUser": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!deleteDocument": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!deleteFolder": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!deleteGroup": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!deleteKnowledgeCenter": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!deleteRecords": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!deleteRecords_23r3": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!editDocumentProperties": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!editGroup": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!editKnowledgeCenterProperties": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!executeStoredProcedureOnSave": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!exportProcessReportToCsv": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!exportProcessReportToExcel": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!exportDataStoreEntityToCsv": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!exportDataStoreEntityToExcel": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sapInvokeWithCommit": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!lockDocument": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!modifyFolderSecurity": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!modifyKnowledgeCenterSecurity": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!modifyUserSecurity": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!moveDocument": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!moveFolder": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!reactivateUser": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!removeGroupAdmins": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!removeGroupMembers": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!editFolderProperties": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!renameUsers": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!sendPushNotification": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!setGroupAttributes": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!startProcess": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!startProcess_24r3": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!startRuleTestsAll": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!startRuleTestsApplications": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!syncRecords": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!syncRecords_22r2": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!unlockDocument": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!updateUserProfile": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    },
+    "a!writeRecords": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!writeRecords_23r2": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!writeRecords_23r4": {
+      "keywordSyntax": true,
+      "evidence": "examples"
+    },
+    "a!writeToDataStoreEntity": {
+      "keywordSyntax": "unknown",
+      "evidence": "none"
+    }
+  }
+}
